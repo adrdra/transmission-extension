@@ -1,6 +1,8 @@
+import { TransmissionController } from "./controllers";
+
 export default {
   addUrl: {
     method: "post",
-    controller: null
+    controller: TransmissionController.addUrl
   }
 }
