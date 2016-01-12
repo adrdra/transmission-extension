@@ -6,7 +6,6 @@ const transmission = new Transmission(config);
 const TransmissionHelper = {};
 
 TransmissionHelper.addUrl = (torrent) => {
-  console.log(torrent)
   return new Promise((resolve, reject) => {
     transmission.addUrl(torrent, (err, res) => {
       if (err) return reject(err);
