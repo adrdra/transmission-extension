@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Transmission-extension",
+  "version": "0.0.1",
+  "description": "An extension to automate torrent download",
+  "icons": {
+    "128": "./assets/img/icon.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "./assets/img/icon.png",
+      "default_title": "Transmission extension"
+    }
+  },
+  "background": {
+    "scripts": ["index.js"]
+  }
+}
