@@ -5,8 +5,8 @@ const TransmissionController = {
     if (req.body.torrent) {
       TransmissionHelper
         .addUrl(req.body.torrent)
-        .then((res) => console.log(res))
-        .catch((err) => console.log(err))
+        .then((response) => res.json(response))
+        .catch((err) => res.status(400).send(err))
     }
   }
 }
